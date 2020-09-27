@@ -1,3 +1,4 @@
 Martita - Paola - 142000 - F - 200 - 12000 - tarde
 Gomez - Juan - 20000 - M - 202 - 10000 - mañana
 Passucci - Alan - 20001 - M - 203 - 14200 - tarde
+Florencia - Gonzalez  - 39341034 - F - 142 - 11000 - mañana

@@ -27,18 +27,18 @@ $_pathIndex = '<!DOCTYPE html>
                     </html> ';
 
 $_pathArchivoEmpleados = "./archivos/empleados.txt";
-echo "Entro!";
-if(isset($_POST["btnEnviar"]))
-{
+
+// if(isset($_POST["btnEnviar"]))
+// {
     
-    if(isset($_POST["txtDni"]) && 
-    isset($_POST["txtNombre"]) &&
-    isset($_POST["cboSexo"]) && 
-    isset($_POST["txtLegajo"]) &&
-    isset($_POST["txtSueldo"]) &&
-    isset($_POST["rdoTurno"])
-    ){
-        $_nuevoEmpleado = new Empleado($_POST["txtNombre"], $_POST["txtApellido"], $_POST['txtDni'], $_POST["cboSexo"], $_POST["txtLegajo"], $_POST["txtSueldo"], $_POST["rdoTurno"]);
+    // if(isset($_POST["txtDni"]) && 
+    // isset($_POST["txtNombre"]) &&
+    // isset($_POST["cboSexo"]) && 
+    // isset($_POST["txtLegajo"]) &&
+    // isset($_POST["txtSueldo"]) &&
+    // isset($_POST["rdoTurno"])
+    // ){
+        $_nuevoEmpleado = new Empleado($_POST["txtNombre"], $_POST["txtApellido"], $_POST["txtDni"], $_POST["cboSexo"], $_POST["txtLegajo"], $_POST["txtSueldo"], $_POST["rdoTurno"]);
         $_nuevaFabrica = new Fabrica("Fabrica HTML5", 7);
 
         echo "el nuevo empleado para agregar es: " . $_nuevoEmpleado->ToString() . "<br>";
@@ -54,11 +54,11 @@ if(isset($_POST["btnEnviar"]))
             echo "No pudo agregarse al siguiente empleado a la fabrica: <br>" . $_nuevoEmpleado->ToString() . "<br>";
             echo $_pathIndex;
         }
-    }
-}
-else
-{
-    echo "No se envio";
-}
+    // }
+// }
+// else
+// {
+//     echo "No se envio";
+// }
 
 
